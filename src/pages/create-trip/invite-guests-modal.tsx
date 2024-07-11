@@ -2,7 +2,7 @@ import { AtSign, Plus, X } from "lucide-react";
 import { FormEvent } from "react";
 
 interface InviteGuestsModalProps {
-  handleGuestsInputModal: () => void;
+  toggleGuestsInputModal: () => void;
   emailsToInvite: string[];
   addNewEmailToInvite: (event: FormEvent<HTMLFormElement>) => void;
   removeEmailFromInvites: (email: string) => void;
@@ -11,7 +11,7 @@ interface InviteGuestsModalProps {
 export function InviteGuestsModal({
   addNewEmailToInvite,
   emailsToInvite,
-  handleGuestsInputModal,
+  toggleGuestsInputModal,
   removeEmailFromInvites,
 }: InviteGuestsModalProps) {
   return (
@@ -20,7 +20,7 @@ export function InviteGuestsModal({
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-semibold">Selecionar convidados</h2>
-            <X onClick={handleGuestsInputModal} className="size-5" />
+            <X onClick={toggleGuestsInputModal} className="size-5" />
           </div>
           <p className="text-sm text-zinc-400 ">
             Os convidados irão receber e-mails para confirmar a participação na
