@@ -1,5 +1,5 @@
-import { UserRoundPlus, ArrowRight } from "lucide-react";
-import { Button } from "../../../components/button";
+import { UserRoundPlus, ArrowRight } from 'lucide-react';
+import { Button } from '../../../components/button';
 
 interface InviteGuestsStepProps {
   toggleGuestsInputModal: () => void;
@@ -13,7 +13,7 @@ export function InviteGuestsStep({
   toggleGuestsInputModal,
 }: InviteGuestsStepProps) {
   return (
-    <div className="h-16 bg-zinc-900 px-4 rounded-xl flex items-center gap-3 shadow-shape">
+    <div className="h-16 bg-zinc-900 px-4 rounded-xl flex items-center justify-between gap-3 shadow-shape">
       <button
         type="button"
         onClick={toggleGuestsInputModal}
@@ -33,10 +33,7 @@ export function InviteGuestsStep({
 
       <div className="w-fill h-px bg-zinc-800" />
 
-      <Button
-        onClick={toggleConfirmTripModal}
-        variant="primary"
-      >
+      <Button onClick={toggleConfirmTripModal} variant="primary">
         Confirmar viagem
         <ArrowRight className="size-5" />
       </Button>
