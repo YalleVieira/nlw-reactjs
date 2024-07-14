@@ -14,12 +14,11 @@ export function CreateActivityModal({
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <h2 className=" font-lg font-semibold">Cadastrar atividade</h2>
-            <Button size="full">
+            <button onClick={toggleCreateActivityModal}>
               <X
                 className="size-5 text-zinc-400"
-                onClick={toggleCreateActivityModal}
               />
-            </Button>
+            </button>
           </div>
 
           <p className="text-sm text-zinc-400">

@@ -9,3 +9,11 @@
 input {
   color-scheme: dark;
 }
+
+.rdp-day_selected {
+  background-color: rgb(163 230 53);
+}
+
+.rdp-day_selected:hover {
+  background-color: rgb(190 242 100);
+}
