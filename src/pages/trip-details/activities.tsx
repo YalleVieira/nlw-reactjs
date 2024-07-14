@@ -1,5 +1,5 @@
-import { Plus, CircleCheck } from "lucide-react";
-import { Button } from "../../components/button";
+import { Plus, CircleCheck } from 'lucide-react';
+import { Button } from '../../components/button';
 
 interface ActivitiesProps {
   toggleCreateActivityModal: () => void;
@@ -10,7 +10,7 @@ export function Activities({ toggleCreateActivityModal }: ActivitiesProps) {
     <div className="flex-1 space-y-6">
       <div className="flex items-center justify-between">
         <h2 className="text-zinc-100 text-3xl font-semibold">Atividades</h2>
-        <Button variant="primary" size="full" onClick={toggleCreateActivityModal}>
+        <Button variant="primary" onClick={toggleCreateActivityModal}>
           <Plus className="size-5" />
           Cadastrar atividade
         </Button>

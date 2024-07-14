@@ -20,7 +20,6 @@ export function DestinationAndDateStep({
   setEventStartAndEndDates,
 }: DestinationAndDateStepProps) {
   const [isDatePicker, setIsDatePicker] = useState(false);
-
   function toggleDatePicker() {
     setIsDatePicker(!isDatePicker);
   }

@@ -10,7 +10,7 @@ export function formatStartAndEndDates(
     eventStartAndEndDates.from &&
     eventStartAndEndDates.to
   ) {
-    return format(eventStartAndEndDates.from, "d'")
+    return format(eventStartAndEndDates.from, "d'  de 'LLLL", { locale: ptBR })
       .concat(' a ')
       .concat(
         format(eventStartAndEndDates.to, "d' de 'LLLL", { locale: ptBR })
