@@ -68,7 +68,7 @@ export function ConfirmTripModal({
             />
           </div>
 
-          <Button variant="primary" size="full">
+          <Button type="submit" variant="primary" size="full">
             Confirmar criação da viagem
           </Button>
         </form>
